@@ -412,7 +412,6 @@ actions:
                               attachment:
                                 url: "{{ camera_proxy_full }}"
                                 content-type: jpeg
-                              url: "{{ open_url_text }}"
                               push:
                                 sound:
                                   name: "{{ ios_sound_name_var }}"
@@ -443,7 +442,6 @@ actions:
                               attachment:
                                 url: "{{ camera_proxy_full }}"
                                 content-type: jpeg
-                              url: "{{ open_url_text }}"
                               push:
                                 sound:
                                   name: "{{ ios_sound_name_var }}"
