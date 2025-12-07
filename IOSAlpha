@@ -419,7 +419,7 @@ actions:
                                   critical: "{{ 1 if ios_critical_var else 0 }}"
                               entity_id: "{{ ios_live_view_entity if ios_live_view_entity|trim != '' else none }}"
                               actions:
-                                - action: URI
+                                - action: OPEN_REOLINK
                                   title: "{{ open_url_title_text }}"
                                   uri: "{{ open_url_text }}"
                                 - action: "{{ action_silence_one }}"
@@ -449,7 +449,7 @@ actions:
                                   critical: "{{ 1 if ios_critical_var else 0 }}"
                               entity_id: "{{ ios_live_view_entity if ios_live_view_entity|trim != '' else none }}"
                               actions:
-                                - action: URI
+                                - action: OPEN_REOLINK
                                   title: "{{ open_url_title_text }}"
                                   uri: "{{ open_url_text }}"
                                 - action: "{{ action_silence_one }}"
@@ -476,7 +476,7 @@ actions:
                                   critical: "{{ 1 if ios_critical_var else 0 }}"
                               entity_id: "{{ ios_live_view_entity if ios_live_view_entity|trim != '' else none }}"
                               actions:
-                                - action: URI
+                                - action: OPEN_REOLINK
                                   title: "{{ open_url_title_text }}"
                                   uri: "{{ open_url_text }}"
 
