@@ -332,6 +332,6 @@ actions:
                           uri: "{{ open_uri_text }}"
                         - action: OPEN_DASHBOARD
                           title: "{{ open_dashboard_title_text }}"
-                          uri: "{{ open_dashboard_text }}"
+                          url: "{{ open_dashboard_text }}"
 
     default: []
