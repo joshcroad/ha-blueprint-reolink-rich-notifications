@@ -317,14 +317,15 @@ actions:
                     title: "{{ title_final }}"
                     message: "{{ msg_final }}"
                     data:
-                      attachment:
-                        url: "{{ camera_proxy_full }}"
-                        content-type: jpeg
+                      # attachment:
+                        # url: "{{ camera_proxy_full }}"
+                        # content-type: jpeg
                       push:
                         sound:
                           name: "{{ ios_sound_name_var }}"
                           volume: "{{ 0 if ios_sound_name_var == 'none' else ios_sound_volume_float }}"
                           critical: "{{ 1 if ios_critical_var else 0 }}"
+                      image: "{{ camera_proxy_full }}"
                       url: "{{ open_dashboard_text }}"
                       actions:
                         - action: OPEN_REOLINK
