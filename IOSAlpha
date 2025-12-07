@@ -469,13 +469,16 @@ actions:
                               attachment:
                                 url: "{{ camera_proxy_full }}"
                                 content-type: jpeg
-                              url: "{{ open_url_text }}"
                               push:
                                 sound:
                                   name: "{{ ios_sound_name_var }}"
                                   volume: "{{ 0 if ios_sound_name_var == 'none' else ios_sound_volume_float }}"
                                   critical: "{{ 1 if ios_critical_var else 0 }}"
                               entity_id: "{{ ios_live_view_entity if ios_live_view_entity|trim != '' else none }}"
+                              actions:
+                                - action: URI
+                                  title: "{{ open_url_title_text }}"
+                                  uri: "{{ open_url_text }}"
 
                     # URL OFF + Silence THIS + ALL
                     - conditions:
