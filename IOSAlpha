@@ -327,10 +327,10 @@ actions:
                           critical: "{{ 1 if ios_critical_var else 0 }}"
                       actions:
                         - action: OPEN_REOLINK
-                          title: "{{ open_url_title_text }}"
-                          uri: "{{ open_url_text }}"
-                        - action: OPEN_LIVE
-                          title: Open Live View
-                          uri: "//front-door"
+                          title: "{{ open_uri_title_text }}"
+                          uri: "{{ open_uri_text }}"
+                        - action: OPEN_DASHBOARD
+                          title: "{{ open_dashboard_title_text }}"
+                          uri: "{{ open_dashboard_text }}"
 
     default: []
