@@ -317,7 +317,7 @@ actions:
                     title: "{{ title_final }}"
                     message: "{{ msg_final }}"
                     data:
-                      image:
+                      attachment:
                         url: "{{ camera_proxy_full }}"
                         content-type: jpeg
                       push:
